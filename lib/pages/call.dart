@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
 
-class ConversationDetailPage extends StatefulWidget {
-  const ConversationDetailPage({super.key});
+class CallPage extends StatefulWidget {
+  const CallPage({super.key});
 
   @override
-  State<ConversationDetailPage> createState() => _ConversationDetailPageState();
+  State<CallPage> createState() => _CallPageState();
 }
 
-class _ConversationDetailPageState extends State<ConversationDetailPage> {
+class _CallPageState extends State<CallPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Conversation Detail')),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('This is the conversation detail page.'),
+            Text('This is the Call page.'),
             MaterialButton(
               onPressed: () => Navigator.pop(context),
               child: Text('Go Back'),

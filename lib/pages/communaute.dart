@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
 
-class ConversationDetailPage extends StatefulWidget {
-  const ConversationDetailPage({super.key});
+class CommunautePage extends StatefulWidget {
+  const CommunautePage({super.key});
 
   @override
-  State<ConversationDetailPage> createState() => _ConversationDetailPageState();
+  State<CommunautePage> createState() => _CommunautePageState();
 }
 
-class _ConversationDetailPageState extends State<ConversationDetailPage> {
+class _CommunautePageState extends State<CommunautePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Conversation Detail')),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('This is the conversation detail page.'),
+            Text('This is the Communaute detail page.'),
             MaterialButton(
               onPressed: () => Navigator.pop(context),
               child: Text('Go Back'),
